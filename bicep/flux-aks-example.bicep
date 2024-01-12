@@ -33,10 +33,10 @@ resource fluxConfig 'Microsoft.KubernetesConfiguration/fluxConfigurations@2022-0
   name: 'bicep-fluxconfig'
   properties: {
     scope: 'cluster'
-    namespace: 'cluster-config'
+    namespace: 'cluster-config-1'
     sourceKind: 'GitRepository'
     gitRepository: {
-      url: 'https://github.com/Azure/gitops-flux2-kustomize-helm-mt'
+      url: 'https://github.com/marcopiuma/gitops-flux2-kustomize-helm-mt'
       repositoryRef: {
         branch: 'main'
       }
