@@ -1,12 +1,19 @@
-apiVersion: image.toolkit.fluxcd.io/v1beta2
-kind: ImageRepository
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: streamer
-  namespace: flux-system
+  name: streaming
+  namespace: default
 spec:
-  image: perceptionengine.azurecr.io/spatial-analysis-streamer
-  imagePullSecrets:
-  - name: registry-credential
-  interval: 5m0s
+  selector:
+    matchLabels:
+      app: streaming
+  template:
+    metadata:
+      labels:
+        app: streaming
+    spec:
+      containers:
+        - name: streaming
+          imagePullPolicy: IfNotPresent
 
 
