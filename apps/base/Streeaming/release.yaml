@@ -1,14 +1,20 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: Pod
+kind: Deployment
 metadata:
-  name: ubuntu
-  labels:
-    app: ubuntu
+  name: streaming
+  namespace: default
 spec:
-  containers:
-  - name: ubuntu
-    image: ubuntu:latest
-    command: ["/bin/sleep", "3650d"]
-    imagePullPolicy: IfNotPresent
-  restartPolicy: Always
+  selector:
+    matchLabels:
+      app: streaming
+  template:
+    metadata:
+      labels:
+        app: streaming
+    spec:
+      containers:
+        - name: streaming
+          image: docker.io/ubuntu:latest
+          imagePullPolicy: IfNotPresent
+
 
