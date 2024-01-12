@@ -8,5 +8,3 @@ spec:
   imagePullSecrets:
   - name: registry-credential
   interval: 5m0s
-
-
