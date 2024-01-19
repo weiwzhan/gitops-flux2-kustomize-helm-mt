@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: spatialanalysis
+  namespace: flux-system
+spec:
+  image: perceptionengine.azurecr.io/cognitive-services-uvs-spatialanalysis
+  imagePullSecrets:
+  - name: registry-credential
+  interval: 5m0s
