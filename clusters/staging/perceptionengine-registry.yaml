@@ -4,7 +4,8 @@ metadata:
   name: spatialanalysis
   namespace: flux-system
 spec:
-  image: perceptionengine.azurecr.io/cognitive-services-uvs-spatialanalysis
-  imagePullSecrets:
-  - name: registry-credential
-  interval: 5m0s
+  containers:
+    image: perceptionengine.azurecr.io/cognitive-services-uvs-spatialanalysis:20231130.1
+    imagePullSecrets:
+      name: registry-credential
+    interval: 5m0s
