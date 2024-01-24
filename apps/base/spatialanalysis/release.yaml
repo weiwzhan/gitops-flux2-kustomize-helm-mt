@@ -11,8 +11,9 @@ spec:
     metadata:
       labels:
         app: spatialanalysis
-    spec:
-      containers:
-        - name: spatialanalysis
-          image: perceptionengine.azurecr.io/cognitive-services-uvs-spatialanalysis:20231130.1
-          imagePullPolicy: IfNotPresent
+  spec:
+  image: perceptionengine.azurecr.io/cognitive-services-uvs-spatialanalysis:20231130.1
+  imagePullSecrets:
+  - name: registry-credential
+  imagePullPolicy: IfNotPresent
+  interval: 5m0s
