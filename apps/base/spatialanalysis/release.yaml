@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spatialanalysis
-  namespace: default
+  namespace: spatialanalysis
 spec:
   selector:
     matchLabels:
@@ -12,8 +12,9 @@ spec:
       labels:
         app: spatialanalysis
   spec:
-  image: perceptionengine.azurecr.io/cognitive-services-uvs-spatialanalysis:20231130.1
-  imagePullSecrets:
-    name: registry-credential
-  imagePullPolicy: IfNotPresent
-  interval: 5m0s
+  containers:
+    name: spatialanalysis
+    image: perceptionengine.azurecr.io/cognitive-services-uvs-spatialanalysis:20231130.1
+    imagePullSecrets:
+      name: registry-credential
+    imagePullPolicy: IfNotPresent
