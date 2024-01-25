@@ -16,5 +16,7 @@ spec:
         - name: streaming
           image: perceptionengine.azurecr.io/spatial-analysis-streamer:latest
           imagePullPolicy: IfNotPresent
+      imagePullSecrets:
+        - name: registry-credential
 
 
