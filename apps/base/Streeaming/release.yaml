@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: streaming
-          image: perceptionengine.azurecr.io/spatial-analysis-streamer:latest
+          image: perceptionengine.azurecr.io/cognitive-services-uvs-spatialanalysis-streaming:20230424.1
           imagePullPolicy: IfNotPresent
       imagePullSecrets:
         - name: registry-credential
