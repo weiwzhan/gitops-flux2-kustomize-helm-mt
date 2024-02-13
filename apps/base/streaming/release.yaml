@@ -18,7 +18,7 @@ spec:
         imagePullPolicy: IfNotPresent
         env:
         - name: LAUNCHER_TYPE
-          value: "avaBackend"
+          value: "cloudBackend"
         - name: EULA
           value: "accept"
         - name: IOTEDGE_WORKLOADURI
