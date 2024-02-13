@@ -19,6 +19,8 @@ spec:
         env:
         - name: LAUNCHER_TYPE
           value: "avaBackend"
+        - name: EULA
+          value: "accept"
         - name: IOTEDGE_WORKLOADURI
           value: "/tmp/iotedge_working_dir"
         - name: IOTEDGE_DEVICEID
