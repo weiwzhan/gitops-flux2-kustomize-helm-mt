@@ -16,7 +16,8 @@ spec:
       - name: streaming
         image: perceptionengine.azurecr.io/spatialanalysis-streaming-public:20240202.1
         imagePullPolicy: IfNotPresent
+        env:
+        - name: IOTEDGE_WORKLOADURI
+          value: "/tmp/iotedge_working_dir"
       imagePullSecrets:
       - name: registry-credential
-
-
