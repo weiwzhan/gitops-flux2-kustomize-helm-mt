@@ -4,7 +4,7 @@ metadata:
   name: streamer
   namespace: flux-system
 spec:
-  image: perceptionengine.azurecr.io/spatial-analysis-streamer
+  image: perceptionengine.azurecr.io/spatialanalysis-streaming-public
   imagePullSecrets:
   - name: registry-credential
   interval: 5m0s
