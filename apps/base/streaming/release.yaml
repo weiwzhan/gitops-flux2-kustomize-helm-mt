@@ -20,6 +20,8 @@ spec:
         - name: IOTEDGE_WORKLOADURI
           value: "/tmp/iotedge_working_dir"
         - name: IOTEDGE_DEVICEID
-          value: "deviceid-1"
+          value: "device-id-1"
+        - name: IOTEDGE_MODULEID
+          value: "module-id-1"
       imagePullSecrets:
       - name: registry-credential
