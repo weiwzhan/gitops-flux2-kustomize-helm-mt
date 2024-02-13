@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: streaming
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: streaming
+  template:
+    metadata:
+      labels:
+        app: streaming
+      spec:
+        containers:
+        - name: streaming
+          env:
+          - name: IOTEDGE_WORKLOADURI
+            value: "/tmp/iotedge_working_dir"
+          - name: IOTEDGE_DEVICEID
+            value: "deviceid-1"
