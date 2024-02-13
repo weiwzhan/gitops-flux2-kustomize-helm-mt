@@ -23,5 +23,7 @@ spec:
           value: "device-id-1"
         - name: IOTEDGE_MODULEID
           value: "module-id-1"
+        - name: IOTEDGE_IOTHUBHOSTNAME
+          value: "hostname-1"
       imagePullSecrets:
       - name: registry-credential
