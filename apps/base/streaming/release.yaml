@@ -14,20 +14,12 @@ spec:
     spec:
       containers:
       - name: streaming
-        image: perceptionengine.azurecr.io/spatialanalysis-streaming-public:20240202.1
+        image: perceptionengine.azurecr.io/spatialanalysis-streaming-public:20240220.1
         imagePullPolicy: IfNotPresent
         env:
         - name: LAUNCHER_TYPE
-          value: "cloudBackend"
+          value: "kubernetes"
         - name: EULA
           value: "accept"
-        - name: IOTEDGE_WORKLOADURI
-          value: "/tmp/iotedge_working_dir"
-        - name: IOTEDGE_DEVICEID
-          value: "device-id-1"
-        - name: IOTEDGE_MODULEID
-          value: "module-id-1"
-        - name: IOTEDGE_IOTHUBHOSTNAME
-          value: "hostname-1"
       imagePullSecrets:
       - name: registry-credential
