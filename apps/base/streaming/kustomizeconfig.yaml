@@ -26,7 +26,7 @@ data:
                             "VIDEO_IS_LIVE": true,
                             "ENABLE_BLOB_HTTPS_CONNECTION": "false",
                             "EULA": "accept",
-                            "CLOUD_OPERATION_CONFIG": "{\"operationId\":\"cognitiveservices.vision.spatialanalysis-recording.cloud\", \"version\": 1, \"enabled\": true, \"platformLogLevel\": \"verbose\", \"nodesLogLevel\": \"verbose\", \"parameters\": {\"GRPC_PORT\": \"50051\", \"VIDEO_SOURCE_ID\":\"axisvideouploadinggraph\",\"MAXIMUM_VIDEO_DURATION_IN_SEC\": 180, \"VIDEO_RECORDING_STORAGE_ACCOUNT_CONNECTION_STRING\":\"DefaultEndpointsProtocol=https;AccountName=mediacopilot;AccountKey=opNiaPYg1M1gE4mRN6fumPweZ85h+BA0rtloyCmI2nByFUTn+6rOOSPf278UEI1c4srKMJ+1TMsK+ASt7z9XaA==;EndpointSuffix=core.windows.net\", \"VIDEO_RECORDING_BLOB_CONTAINER_NAME\":\"yichenhao-debug\"}}",
+                            "CLOUD_OPERATION_CONFIG": "{\"operationId\":\"cognitiveservices.vision.spatialanalysis-recording.cloud\", \"version\": 1, \"enabled\": true, \"platformLogLevel\": \"verbose\", \"nodesLogLevel\": \"verbose\", \"parameters\": {\"GRPC_PORT\": \"50051\", \"VIDEO_SOURCE_ID\":\"axisvideouploadinggraph\",\"MAXIMUM_VIDEO_DURATION_IN_SEC\": 180, \"VIDEO_RECORDING_STORAGE_ACCOUNT_CONNECTION_STRING\":\" CONNECTION_STRING\", \"VIDEO_RECORDING_BLOB_CONTAINER_NAME\":\"yichenhao-debug\"}}",
                             "CLOUD_ENDPOINT": "10.178.253.7:50051",
                             "CLOUD_API_KEY": "",
                             "USE_SSL": false,
