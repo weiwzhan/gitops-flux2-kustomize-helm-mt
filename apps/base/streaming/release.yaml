@@ -23,3 +23,7 @@ spec:
           value: "accept"
       imagePullSecrets:
       - name: registry-credential
+    volumes:
+    - name: config
+      configMap:
+        name: rtcv-config
