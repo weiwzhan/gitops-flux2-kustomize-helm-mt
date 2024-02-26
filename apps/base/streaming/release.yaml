@@ -21,9 +21,10 @@ spec:
           value: "kubernetes"
         - name: EULA
           value: "accept"
-      volumeMounts:
-      - name: archon-config-path
-        mountPath: /archon
+      volume:
+      - name: config
+        configMap:
+        - name: archon-config-path
       imagePullSecrets:
       - name: registry-credential
     volumes:
