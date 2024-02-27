@@ -16,18 +16,29 @@ spec:
       - name: streaming
         image: perceptionengine.azurecr.io/spatialanalysis-streaming-public:20240220.1
         imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+        volumeMounts:
+        - name: config
+          mountPath: /archon
+        - name: dshm
+          mountPath: /dev/shm
+          mountPropagation: None
+          readOnly: false
+          subpath:
         env:
         - name: LAUNCHER_TYPE
           value: "kubernetes"
         - name: EULA
           value: "accept"
-      volume:
-      - name: config
-        configMap:
-        - name: archon-config-path
       imagePullSecrets:
       - name: registry-credential
-    volumes:
-    - name: config
-      configMap:
-        name: rtcv-config
+      volumes:
+      - name: config
+        configMap:
+          name: archon-config-path
+      - name: dshm
+        emptyDir:
+          medium: Memory
+          sizeLimit: 536870912
