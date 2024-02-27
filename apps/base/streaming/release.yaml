@@ -16,14 +16,13 @@ spec:
       - name: streaming
         image: perceptionengine.azurecr.io/spatialanalysis-streaming-public:20240220.1
         imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            cpu: "4"
+          memory:
         volumeMounts:
         - name: config
           mountPath: /archon
-        - name: dshm
-          mountPath: /dev/shm
-          mountPropagation: None
-          readOnly: false
-          subpath:
         env:
         - name: LAUNCHER_TYPE
           value: "kubernetes"
@@ -45,7 +44,3 @@ spec:
       - name: config
         configMap:
           name: rtcv-config
-      - name: dshm
-        emptyDir:
-          medium: Memory
-          sizeLimit: 536870912
