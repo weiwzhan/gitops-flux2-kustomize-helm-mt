@@ -16,9 +16,6 @@ spec:
       - name: streaming
         image: perceptionengine.azurecr.io/spatialanalysis-streaming-public:20240220.1
         imagePullPolicy: IfNotPresent
-        resources:
-          limits:
-            nvidia.com/gpu: 1
         volumeMounts:
         - name: config
           mountPath: /archon
@@ -37,7 +34,7 @@ spec:
       volumes:
       - name: config
         configMap:
-          name: archon-config-path
+          name: rtcv-config
       - name: dshm
         emptyDir:
           medium: Memory
