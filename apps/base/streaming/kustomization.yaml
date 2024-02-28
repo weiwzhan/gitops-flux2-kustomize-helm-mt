@@ -7,3 +7,5 @@ configMapGenerator:
 - name: rtcv-config
   files:
   - kustomizeconfig.yaml
+generatorOptions:
+  disableNameSuffixHash: true
