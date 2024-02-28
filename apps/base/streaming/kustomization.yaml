@@ -5,6 +5,7 @@ resources:
 - release.yaml
 configMapGenerator:
 - name: rtcv-config
+  behavior: create
   files:
   - kustomizeconfig.yaml
 generatorOptions:
