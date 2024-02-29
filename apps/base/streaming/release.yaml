@@ -31,12 +31,12 @@ spec:
         - name: VIDEO_RECORDING_BLOB_CONTAINER_NAME
           valueFrom:
             secretKeyRef:
-              name: azure-secrets
+              name: azure-secret
               key: VIDEO_RECORDING_BLOB_CONTAINER_NAME
         - name: VIDEO_RECORDING_STORAGE_ACCOUNT_CONNECTION_STRING
           valueFrom:
             secretKeyRef:
-              name: azure-secrets
+              name: azure-secret
               key: VIDEO_RECORDING_STORAGE_ACCOUNT_CONNECTION_STRING
       imagePullSecrets:
       - name: registry-credential
