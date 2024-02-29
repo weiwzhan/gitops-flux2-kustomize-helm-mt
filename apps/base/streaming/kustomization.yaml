@@ -7,6 +7,6 @@ configMapGenerator:
 - name: rtcv-config
   behavior: create
   files:
-  - kustomizeconfig.yaml
+  - archon-module-config.json
 generatorOptions:
   disableNameSuffixHash: true
