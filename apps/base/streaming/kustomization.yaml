@@ -8,5 +8,3 @@ configMapGenerator:
   behavior: create
   files:
   - archon-module-config.json
-generatorOptions:
-  disableNameSuffixHash: true
