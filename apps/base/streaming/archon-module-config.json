@@ -8,10 +8,10 @@
     "graphs": {
         "stream": {
             "operationId": "cognitiveservices.vision.cloudstream",
-            "enabled": true,
+            "enabled": false,
             "instances": {
                 "instance1": {
-                    "enabled": true,
+                    "enabled": false,
                     "parameters": {
                         "VIDEO_URL": "rtsp://root:witwicsd@10.224.30.132/axis-media/media.amp?videocodec=h264",
                         "VIDEO_SOURCE_ID": "vp01-dev7",
