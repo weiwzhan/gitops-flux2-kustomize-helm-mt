@@ -8,10 +8,10 @@
     "graphs": {
         "stream": {
             "operationId": "cognitiveservices.vision.cloudstream",
-            "enabled": false,
+            "enabled": true,
             "instances": {
                 "instance1": {
-                    "enabled": false,
+                    "enabled": true,
                     "parameters": {
                         "VIDEO_URL": "${VIDEO_URL_SAS}",
                         "VIDEO_SOURCE_ID": "panda",
