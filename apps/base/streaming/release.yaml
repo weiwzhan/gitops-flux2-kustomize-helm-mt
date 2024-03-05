@@ -38,6 +38,11 @@ spec:
             secretKeyRef:
               name: azure-secret
               key: VIDEO_RECORDING_STORAGE_ACCOUNT_CONNECTION_STRING
+        - name: VIDEO_URL_SAS
+          valueFrom:
+            secretKeyRef:
+              name: azure-blob-secret
+              key: VIDEO_URL_SAS
       imagePullSecrets:
       - name: registry-credential
       volumes:
