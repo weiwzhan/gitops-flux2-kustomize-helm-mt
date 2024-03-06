@@ -7,7 +7,7 @@
     },
     "graphs": {
         "stream": {
-            "operationId": "cognitiveservices.vision.cloudstream",
+            "operationId": "cognitiveservices.vision.cloudstream.cpu",
             "enabled": true,
             "instances": {
                 "instance1": {
