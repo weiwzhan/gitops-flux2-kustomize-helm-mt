@@ -15,6 +15,7 @@
                     "parameters": {
                         "VIDEO_URL": "${VIDEO_URL_SAS}",
                         "VIDEO_SOURCE_ID": "panda",
+                        "VIDEO_INGESTION_FPS": 30,
                         "VIDEO_IS_LIVE": false,
                         "ENABLE_BLOB_HTTPS_CONNECTION": "false",
                         "EULA": "accept",
