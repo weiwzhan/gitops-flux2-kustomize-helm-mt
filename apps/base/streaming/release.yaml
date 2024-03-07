@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: streaming
-        image: perceptionengine.azurecr.io/spatialanalysis-streaming-public:20240305.3
+        image: perceptionengine.azurecr.io/spatialanalysis-streaming-public:20240305.4
         imagePullPolicy: IfNotPresent
         resources:
           limits:
