@@ -52,7 +52,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: azure-operation-secret
-              key: VIDEO_UCLOUD_API_KEYRL_SAS
+              key: CLOUD_API_KEY
       imagePullSecrets:
       - name: registry-credential
       volumes:
