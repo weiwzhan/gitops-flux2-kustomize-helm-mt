@@ -43,6 +43,16 @@ spec:
             secretKeyRef:
               name: azure-blob-secret
               key: VIDEO_URL_SAS
+        - name: CLOUD_ENDPOINT
+          valueFrom:
+            secretKeyRef:
+              name: azure-operation-secret
+              key: CLOUD_ENDPOINT
+        - name: CLOUD_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: azure-operation-secret
+              key: VIDEO_UCLOUD_API_KEYRL_SAS
       imagePullSecrets:
       - name: registry-credential
       volumes:

@@ -19,9 +19,9 @@
                         "VIDEO_IS_LIVE": false,
                         "ENABLE_BLOB_HTTPS_CONNECTION": "false",
                         "EULA": "accept",
-                        "CLOUD_OPERATION_CONFIG": "{\"operationId\":\"cognitiveservices.vision.spatialanalysis-recording.cloud\",\"version\":1,\"enabled\":true,\"platformLogLevel\":\"verbose\",\"nodesLogLevel\":\"verbose\",\"parameters\":{\"GRPC_PORT\":\"50051\",\"VIDEO_SOURCE_ID\":\"panda\",\"MAXIMUM_VIDEO_DURATION_IN_SEC\":180,\"VIDEO_RECORDING_STORAGE_ACCOUNT_CONNECTION_STRING\":\"${VIDEO_RECORDING_STORAGE_ACCOUNT_CONNECTION_STRING}\",\"VIDEO_RECORDING_BLOB_CONTAINER_NAME\":\"${VIDEO_RECORDING_BLOB_CONTAINER_NAME}\"}}",
-                        "CLOUD_ENDPOINT": "10.178.253.7:50051",
-                        "CLOUD_API_KEY": "",
+                        "CLOUD_OPERATION_CONFIG": "{\"operationId\":\"cognitiveservices.vision.spatialanalysis-recording.cloud\",\"version\":1,\"enabled\":true,\"platformLogLevel\":\"verbose\",\"nodesLogLevel\":\"verbose\",\"parameters\":{\"GRPC_PORT\":\"50051\",\"MAXIMUM_VIDEO_DURATION_IN_SEC\":180,\"VIDEO_RECORDING_STORAGE_ACCOUNT_CONNECTION_STRING\":\"${VIDEO_RECORDING_STORAGE_ACCOUNT_CONNECTION_STRING}\",\"VIDEO_RECORDING_BLOB_CONTAINER_NAME\":\"${VIDEO_RECORDING_BLOB_CONTAINER_NAME}\"}}",
+                        "CLOUD_ENDPOINT": "${CLOUD_ENDPOINT}",
+                        "CLOUD_API_KEY": "${CLOUD_API_KEY}",
                         "USE_SSL": false,
                         "ENABLE_MOTION_DETECTION": false
                     }
