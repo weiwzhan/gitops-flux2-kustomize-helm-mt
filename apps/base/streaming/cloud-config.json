@@ -1,0 +1,13 @@
+{
+    "operationId": "cognitiveservices.vision.spatialanalysis-recording.cloud",
+    "version": 1,
+    "enabled": true,
+    "platformLogLevel": "verbose",
+    "nodesLogLevel": "verbose",
+    "parameters": {
+        "GRPC_PORT": "50051",
+        "MAXIMUM_VIDEO_DURATION_IN_SEC": 180,
+        "VIDEO_RECORDING_STORAGE_ACCOUNT_CONNECTION_STRING": "${VIDEO_RECORDING_STORAGE_ACCOUNT_CONNECTION_STRING}",
+        "VIDEO_RECORDING_BLOB_CONTAINER_NAME": "${VIDEO_RECORDING_BLOB_CONTAINER_NAME}"
+    }
+}
